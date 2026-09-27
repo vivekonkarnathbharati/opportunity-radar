@@ -8,8 +8,7 @@
 [![Presentation Deck](https://img.shields.io/badge/Presentation-Gamma_Slides-8b5cf6?style=for-the-badge)](https://gamma.app/docs/OpportunityRadar-azg0t6y4lylyeui)
 [![Tech Stack](https://img.shields.io/badge/Stack-React_18_•_TypeScript_•_Tailwind_CSS-3b82f6?style=for-the-badge)](https://vitejs.dev/)
 
-PPT = https://gamma.app/docs/OpportunityRadar--azg0t6y4lylyeui
-
+PPT = https://gamma.app/docs/OpportunityRadar-azg0t6y4lylyeui
 
 ---
 
@@ -33,7 +32,8 @@ Early-stage computer science students face severe **portal fatigue** and **appli
 ---
 
 ## 🏗️ Technical Architecture & Engineering Highlights
-```
+
+```text
 src/
 ├── components/
 │   ├── AICoverLetterModal.tsx  # Context-injection pitch generator & clipboard bridge
@@ -47,56 +47,86 @@ src/
 └── main.tsx                    # Vite React DOM entry point
 ```
 
-
-1. Deterministic Match Scoring (O(N) State Reactivity)
+1. **Deterministic Match Scoring (O(N) State Reactivity)**  
 The compatibility engine computes set intersections between candidate skills and listing requirements directly within React state. It avoids heavy third-party calculation libraries to achieve sub-50ms execution times across complex compound filter selections.
-2. Strict TypeScript Contracts
+
+2. **Strict TypeScript Contracts**  
 All domain models (Opportunity, FilterState, SkillTag) are strictly typed in src/types.ts. Zero usage of any types ensures predictable component rendering and eliminates runtime null-pointer exceptions.
-3. Ethical "Human-in-the-Loop" AI Design
+
+3. **Ethical "Human-in-the-Loop" AI Design**  
 Automated application bots trigger recruiter spam detection and violate platform guidelines. OpportunityRadar generates the outreach context deterministically from verified profile variables, keeping the student in control to review, edit, and copy the pitch manually.
-4. Decoupled Data Schema
+
+4. **Decoupled Data Schema**  
 The mock data in src/data.ts adheres to standard REST/GraphQL DTOs (Data Transfer Objects). Integrating live university Training & Placement (T&P) APIs or a PostgreSQL/Supabase backend in Phase 2 requires zero changes to the UI component layer.
 
-🛠️ Tech Stack
-Layer	Technologies Used
-Frontend Framework	React 18 (Hooks, Functional Components)
-Language	TypeScript (Strict Mode)
-Styling & UI	Tailwind CSS, Lucide React Icons
-Build & Tooling	Vite, PostCSS, ESLint
-Hosting & Edge	Cloud Edge Deployment via Bolt
+---
 
-🚦 Getting Started Locally
-Prerequisites
-Node.js (version 18.0 or higher)
-npm (version 9.0 or higher)
-Installation Steps
+## 🛠️ Tech Stack
 
-Clone the repository:
+| Layer | Technologies Used |
+| :--- | :--- |
+| **Frontend Framework** | React 18 (Hooks, Functional Components) |
+| **Language** | TypeScript (Strict Mode) |
+| **Styling & UI** | Tailwind CSS, Lucide React Icons |
+| **Build & Tooling** | Vite, PostCSS, ESLint |
+| **Hosting & Edge** | Cloud Edge Deployment via Bolt |
+
+---
+
+## 🚦 Getting Started Locally
+
+### Prerequisites
+* Node.js (version 18.0 or higher)
+* npm (version 9.0 or higher)
+
+### Installation Steps
+
+1. **Clone the repository:**
+```bash
 git clone [https://github.com/vivekonkarnathbharati/opportunity-radar.git](https://github.com/vivekonkarnathbharati/opportunity-radar.git)
 cd opportunity-radar
-Install project dependencies:
-npm install
-Start the local development server:
-npm run dev
-Build for production:
-npm run build
+```
 
-🗺️ Product Roadmap
-Phase 1 (Delivered Hackathon MVP):
-Core discovery feed with instant skill-based match scoring.
-Multi-factor skill and event category filters.
-Context-aware AI application pitch assistant with 1-click copy.
-Phase 2 (Immediate Post-Hackathon):
-Direct ATS Webhook integration for real-time vacancy counters.
-Google OAuth login with persistent profile saving via Supabase.
-Resume upload and automated skill extraction parser.
-Phase 3 (Enterprise & Campus Scale):
-College Placement Cell (T&P) admin portal for verified campus postings.
-Automated WhatsApp alerts for 90%+ skill compatibility matches.
-👨‍💻 Developer & Hackathon Attribution
-Developer: Vivek Onkarnath Bharati (PW Institute of Innovation, Hadapsar, Pune)
-Event: FIT-FEST 2026 Hackathon
-Venue: Flora Institute of Technology, Pune
-Challenge: Problem Statement 1 — Student Opportunity Discovery Platform
-Mentions: @the_flora_institutes • @gdg.fit.pune
-Official Hashtags: #FITFEST2026 #FLORAINSTITUTES #GDGFITPUNE #TECHHACKATHON
+2. **Install project dependencies:**
+```bash
+npm install
+```
+
+3. **Start the local development server:**
+```bash
+npm run dev
+```
+
+4. **Build for production:**
+```bash
+npm run build
+```
+
+---
+
+## 🗺️ Product Roadmap
+
+### Phase 1 (Delivered Hackathon MVP):
+* Core discovery feed with instant skill-based match scoring.
+* Multi-factor skill and event category filters.
+* Context-aware AI application pitch assistant with 1-click copy.
+
+### Phase 2 (Immediate Post-Hackathon):
+* Direct ATS Webhook integration for real-time vacancy counters.
+* Google OAuth login with persistent profile saving via Supabase.
+* Resume upload and automated skill extraction parser.
+
+### Phase 3 (Enterprise & Campus Scale):
+* College Placement Cell (T&P) admin portal for verified campus postings.
+* Automated WhatsApp alerts for 90%+ skill compatibility matches.
+
+---
+
+## 👨‍💻 Developer & Hackathon Attribution
+
+* **Developer:** Vivek Onkarnath Bharati (PW Institute of Innovation, Hadapsar, Pune)
+* **Event:** FIT-FEST 2026 Hackathon
+* **Venue:** Flora Institute of Technology, Pune
+* **Challenge:** Problem Statement 1 — Student Opportunity Discovery Platform
+* **Mentions:** `@the_flora_institutes` • `@gdg.fit.pune`
+* **Official Hashtags:** `#FITFEST2026 #FLORAINSTITUTES #GDGFITPUNE #TECHHACKATHON`
