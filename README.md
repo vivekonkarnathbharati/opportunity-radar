@@ -34,7 +34,6 @@ Early-stage computer science students face severe **portal fatigue** and **appli
 
 ## 🏗️ Technical Architecture & Engineering Highlights
 
-```text
 src/
 ├── components/
 │   ├── AICoverLetterModal.tsx  # Context-injection pitch generator & clipboard bridge
@@ -46,6 +45,8 @@ src/
 ├── types.ts                    # Strict TypeScript domain interfaces
 ├── App.tsx                     # Main layout & responsive filter coordination
 └── main.tsx                    # Vite React DOM entry point
+
+
 
 1. Deterministic Match Scoring (O(N) State Reactivity)
 The compatibility engine computes set intersections between candidate skills and listing requirements directly within React state. It avoids heavy third-party calculation libraries to achieve sub-50ms execution times across complex compound filter selections.
