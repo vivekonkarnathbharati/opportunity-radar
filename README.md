@@ -7,6 +7,7 @@
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github)](https://github.com/vivekonkarnathbharati/opportunity-radar)
 [![Presentation Deck](https://img.shields.io/badge/Presentation-Gamma_Slides-8b5cf6?style=for-the-badge)](https://gamma.app/docs/OpportunityRadar-azg0t6y4lylyeui)
 [![Tech Stack](https://img.shields.io/badge/Stack-React_18_•_TypeScript_•_Tailwind_CSS-3b82f6?style=for-the-badge)](https://vitejs.dev/)
+
 PPT = https://gamma.app/docs/OpportunityRadar--azg0t6y4lylyeui
 
 
