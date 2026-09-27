@@ -16,6 +16,7 @@ PPT = https://gamma.app/docs/OpportunityRadar--azg0t6y4lylyeui
 - **Frontend:** React, TypeScript, Tailwind CSS
 - **Bundler:** Vite
 - **Icons:** Lucide React
+
 **Live Demo:** [student-career-match-qpr9.bolt.host](https://student-career-match-qpr9.bolt.host)
 
 **GitHub Link:** https://github.com/vivekonkarnathbharati/opportunity-radar/tree/main
