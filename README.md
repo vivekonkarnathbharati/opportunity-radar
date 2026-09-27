@@ -14,3 +14,4 @@ OpportunityRadar bridges the gap between students and career opportunities by ma
 - **Frontend:** React, TypeScript, Tailwind CSS
 - **Bundler:** Vite
 - **Icons:** Lucide React
+**Live Demo:** [student-career-match-qpr9.bolt.host](https://student-career-match-qpr9.bolt.host)
